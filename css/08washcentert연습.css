@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.inner{
+    width: 100%;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+h1{font-size: 2rem;}
+section{
+    width: 100%;
+    flex-direction: column;
+    align-items: unset;
+    gap: 20px;
+}
+section img{
+    flex: 1 1 auto;
+    height: 150px;
+    object-fit: cover;
+}
+section:nth-last-of-type(2) img{
+    order: unset;
+}
+section .textbox{
+    padding: 0 50px;
+}
+.textbox h2{
+    font-size: 2.187rem;
+    margin: 10px 0 25px 0;
+}

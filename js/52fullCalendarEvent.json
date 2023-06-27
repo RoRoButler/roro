@@ -1,0 +1,26 @@
+[
+    {
+        "title": "공연제목1",
+        "start": "2022-06-13",
+        "end": "2022-06-17",
+        "startStr": "this.start",
+        "endStr": "this.end",
+        "extendedProps": {
+            "posterUrl": "/images/apple.png",
+            "posterAlt": "this.title + '포스터'",
+            "description": "공연1내용 블라블라"
+        },
+        "allDay": true
+    },
+    {
+        "title": "공연제목2",
+        "start": "2022-06-19",
+        "end": "2022-06-21",
+        "extendedProps": {
+            "posterUrl": "/images/apple.png",
+            "posterAlt": "this.title + '포스터'",
+            "description": "공연2내용 블라블라"
+        },
+        "allDay": true
+    }
+]

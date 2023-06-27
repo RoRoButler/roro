@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트noto sans korean  */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* font-awsome v5.15.4 */
+
+*{
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    box-sizing: border-box;
+}
+:root{
+    font-family: 'Noto Sans KR', 'sans-serif';
+    --white-color : #fff;
+    --grey-color : #666;
+    --white-alpha-color : rgba(255, 255, 255, 0.4);
+    --grey-alpha-color : rgba(102, 102, 102, 0.4);
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    gap: 30px;
+}
+.sec01 .logo{
+    background: url(/images/daily/logo_phone.png) 50% 50% no-repeat;
+    width: 152px;
+    height: 57px;
+    display: block;
+    text-indent: -9000px;
+    overflow: hidden;
+}
+.sec01 .copy{
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #bbb;
+}
+.sec01 .copy::before,
+.sec01 .copy::after{
+    font-size: 1.2rem;
+    color: #666;
+    position: relative;
+    top: -10px;
+}
+.sec01 .copy::before{ content: "\f10d";}
+.sec01 .copy::after{ content: "\f10e";}
+
+.sec02{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+}
+.sec02 > .box{
+    flex: 0 0 290px;
+    height: 230px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f5f6f7;
+    color: var(--grey-color);
+}
+.sec02 img.box{
+    overflow: hidden;
+    padding: 0;
+}
+.sec02 > .box.b02 {
+    color: var(--white-color);
+    background: #db0d26;
+    border-color: var(--white-alpha-color);
+}
+.sec02 > .box.b03{
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+.sec02 > .box.b04{
+    color: var(--white-color);
+    background: url(/images/daily/bg_phone_02.jpg) no-repeat 50% 50% / cover, rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    border-color: var(--white-alpha-color);
+}
+.sec02 > .box.b05{
+    border-color: var(--grey-alpha-color);
+}
+.sec02 > .box.b06{
+    flex: 1 1 600px;
+    margin: 0 20px 0 0;
+}
+.sec02 > .box.b07{
+    color: var(--white-color);
+    background: url(/images/daily/bg_phone_04.jpg) no-repeat 50% 50% / cover, rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    border-color: var(--white-alpha-color);
+}
+.sec02 > .box.b08{ filter: brightness(80%);}
+.sec02 > .box.b09{
+    border-color: var(--grey-alpha-color);
+}
+.sec02 > .box.b10{
+    margin: 0 20px;
+    color: var(--white-color);
+    background: url(/images/daily/bg_phone_06.jpg) no-repeat 50% 50% / cover rgba(223, 169, 23, 0.5);
+    background-blend-mode: screen;
+    border-color: var(--white-alpha-color);
+}
+.sec02 > .box.b11{
+    align-items: center;
+    justify-content: center;
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+.sec02 > .box > .title{
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.sec02 > .box > .copy{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: 1.8;
+    max-height: 5.4rem;
+    font-size: 0.875rem;
+    flex: 1 1 0;
+}
+.sec02 > .box > .date{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.sec02 > .box > a:link,
+.sec02 > .box > a:visited{
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-color: inherit;
+    line-height: 1;
+}

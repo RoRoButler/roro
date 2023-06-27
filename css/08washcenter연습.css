@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트noto sans korean  */
+
+/* washcenter PC */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    /* outline: solid 1px red; */
+}
+:root{
+    font-family: 'Noto Sans KR', 'sans Shrif';
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #888;
+}
+section{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+section img{
+    flex: 0 0 690px;
+    vertical-align: bottom;
+    display: flex;
+    order: 1;
+}
+section .textbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+section:nth-of-type(2) img{
+    display: flex;
+    order: 2;
+}
+.textbox span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00b9d2;
+}
+.textbox h2{
+    font-size: 3.125rem;
+    margin: 10px 0 45px 0;
+}
+.textbox p{
+    line-height: 1.7;
+    word-break: keep-all;
+}
